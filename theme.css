@@ -18,12 +18,13 @@
 }
 .titulo{
     position: absolute;
-    margin-top: 20px;
+    margin-top: 6px;
     left: 30px;
 	color: white;
 	font-style: italic;
-    
+
 }
+
 
 
 .top{
