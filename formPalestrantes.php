@@ -9,7 +9,8 @@
     <script>
         $(function(){ 
                   $("#header").load("header.html");
-                  $("#footer").load("footer.html"); 
+                  $("#footer").load("footer.html");
+                  $("#validar").load("validar.html"); 
          });
    </script>
     <title>Meu Form</title>
@@ -21,8 +22,20 @@
 <body>
     <div id = "header"></div>
     <div class = "cadastro">
-        <form name="formPalestrante" method="post" action="#">
-       
+        <form name= "formPalestrante" method="post" action="#">
+         <h2>Cadastro</h2>
+         <br><br>
+         <label for = "nome">Nome:</label>
+         <input type = "text" name = "nome" id = "nome"
+         placeholder = "nome"><br>
+         <label for = "email">Email:</label>
+         <input type = "email" name = "email" id ="email"
+         placeholder = "E-mail"><br>
+         <label for = "cpf">Cpf:</label>
+         <input type = "text" name = "cpf" id = "cpf"
+         placeholder = "CPF">
+
+         
        
        </form>    
 

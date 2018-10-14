@@ -78,3 +78,12 @@
 	\\background-color: gray;
 	border-bottom:2px solid white;
 	}
+	
+.cadastro {
+	width: 100%;
+    float: left; 
+    color: #C71585;
+    position: absolute;
+    margin-top: 300px; 
+	left: 10%;
+}

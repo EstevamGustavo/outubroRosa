@@ -52,7 +52,7 @@ $user = (!empty($_POST['login'])) ? $_POST['login']:'';
             <h2>Login</h2>
             <br><br>
 
-            <label for="login">Login:</label>
+            <label for="login">Login: </label>
 
             <input type="email" id="login" name="login" 
             placeholder="Email or ID" value = <?php echo $user ?>> <br>
