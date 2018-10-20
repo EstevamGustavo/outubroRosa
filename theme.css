@@ -87,3 +87,15 @@
     margin-top: 150px; 
 	left: 2%;
 }
+
+#campo {
+	position: relative;
+	width: 25%;
+	height: 30%;
+	margin-left: 0%;
+
+}
+#data_nasc {
+	position: relative;
+	width: 3%;
+}

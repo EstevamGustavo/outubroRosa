@@ -2,10 +2,7 @@
 <html>
 
 <head>
-    <?php
     
-    
-    ?>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -25,23 +22,31 @@
 
 <body>
     <div id = "header"></div>
+    <div id = "validar"></div>
 
     <div class = "cadastro">
         <form name= "formPalestrante" method="post" action="#">
-         <h2>Cadastro</h2>
-         <br><br>
-         <label for = "nome">Nome:</label>
-         <input type = "text" name = "nome" id = "nome"
-         placeholder = "nome"><br><br>
-         <label for = "email">Email:</label>
-         <input type = "email" name = "email" id ="email"
-         placeholder = "E-mail"><br><br>
-         <label for = "cpf">Cpf:</label>
-         <input type = "text" name = "cpf" id = "cpf"
-         placeholder = "CPF"><br>
-
+        <h2>Cadastro</h2>
+                  
+        <label for = "nome">Nome:</label>
+        <input type = "text" name = "nome" id = "campo"
+        placeholder = "nome"><br><br>
          
-       
+        <label for = "email">Email:</label>
+        <input type = "email" name = "email" id ="campo"
+        placeholder = "E-mail"><br><br>
+         
+        <label for = "cpf">Cpf:</label>
+        <input type = "text" name = "cpf" id = "campo"
+        placeholder = "CPF"><br><br>
+        
+        <label for = "formacao">Formação:</label>
+        <input type = "text" name = "formacao" id = "campo"
+        placeholder = "Formação"  ><br><br>
+        
+
+        
+      
        </form>    
 
     </div> 

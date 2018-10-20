@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <script type="text/script" src="validar.js"></script>
+    <title>Meu Form</title>
+    <link rel="stylesheet" type="text/css" href="theme.css">
+    <meta charset="utf-8">
+
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <script src="validar.js"></script>
+
+    <div class="cadastro">
+        <form name="formPalestrante" method="post" action="#" onsubmit="return validarPalestrante()">
+            <h2>Cadastro</h2>
+
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="campo" placeholder="nome"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="campo" placeholder="E-mail"><br><br>
+
+            <label for="cpf">Cpf:</label>
+            <input type="text" name="cpf" id="cpf" placeholder="CPF"><br><br>
+
+            <label for="formacao">Formação:</label>
+            <input type="text" name="formacao" id="campo" placeholder="Formação"><br><br>
+
+            <label for="descricao">Descrição:</label>
+            <input type="text" name="descricao" id="campo" placeholder="Descrição"><br><br>
+
+            <h5>Data nascimento:</h5><br>
+            <label for="dia_nasc">Dia:</label>
+            <input type="number" name="dia_nasc" id="data_nasc" placeholder="dia">
+
+            <label for="mes_nasc">Dia:</label>
+            <input type="number" name="mes_nasc" id="data_nasc" placeholder="mes">
+
+            <label for="ano_nasc">Ano:</label>
+            <input type="number" name="ano_nasc" id="data_nasc" placeholder="Ano"><br><br>
+
+            <input type="submit" value="Cadastrar">
+
+        </form>
+
+    </div>
+
+
+
+
+</body>
+
+
+
+</html>
