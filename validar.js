@@ -1,5 +1,5 @@
-function validarClear(cpf){
-    var check = cpf.replace(/(\.|\/|\-)/g,"");
+function validarClear(cpf) {
+    var check = cpf.replace(/(\.|\/|\-)/g, "");
     return check;
 
 }
@@ -21,7 +21,7 @@ function validarPalestrante() {
     var cpf = validarClear(cpf);
     var fone = validarClear(fone);
     var fone2 = validarClear(fone2);
-    
+
 
 
     if (nome == "" || nome.length > 100) {
@@ -36,15 +36,15 @@ function validarPalestrante() {
         alert("CPF invalido!");
         return false;
     }
-    if (fone == "" || fone.length > 9 || fone.length < 8){
+    if (fone == "" || fone.length > 9 || fone.length < 8) {
         alert("Telefone invalido!");
         return false;
     }
-    if (ddd == '' || ddd.length > 2 | ddd.length < 2){
+    if (ddd == '' || ddd.length > 2 | ddd.length < 2) {
         alert("DDD invalido!")
         return false;
     }
-    if (ddd2 == '' || ddd2.length > 2 | ddd2.length < 2){
+    if (ddd2 == '' || ddd2.length > 2 | ddd2.length < 2) {
         alert("DDD invalido!")
         return false;
     }
@@ -58,18 +58,18 @@ function validarPalestrante() {
     }
     if (mes_nasc == 2 && dia_nasc > 29) {
         alert("Data invalida!");
-    }else if (mes_nasc == "" || (mes_nasc == 4 || mes_nasc == 6 || mes_nasc == 9 || mes_nasc == 11) && dia_nasc > 30) {
+    } else if (mes_nasc == "" || (mes_nasc == 4 || mes_nasc == 6 || mes_nasc == 9 || mes_nasc == 11) && dia_nasc > 30) {
         alert("Data nvalida!");
         return false;
-    }else if (dia_nasc == "" || dia_nasc > 31) {
+    } else if (dia_nasc == "" || dia_nasc > 31) {
         alert("Data invalida!");
         return false;
     }
-    if (dia_nasc == '' || ano_nasc == ''){
+    if (dia_nasc == '' || ano_nasc == '') {
         alert("Data invalida!");
         return false;
     }
-    
+
 }
 
 function validarPalestras() {
@@ -82,15 +82,37 @@ function validarEvento() {
     var nomeEvento = document.forms["formEvento"]["tema"].value;
     var anoEvento = document.forms["formEvento"]["anoEvento"].value;
 
-    if(nomeEvento == "") {
+    if (nomeEvento == "") {
         alert("Tema Invalido!")
         return false;
     }
-    if(anoEvento == ""){
+    if (anoEvento == "") {
         alert("Ano Invalido!")
         return false;
     }
+}
+function validarEquipe() {
+    var nome = document.forms["formEquipe"]["nome"].value;
+    var email = document.forms["formEquipe"]["email"].value;
+    var cpf = document.forms["formEquipe"]["cpf"].value;
+    var cargo = document.forms["formEquipe"]["cboEquipe"].value;
+    var cpf = validarClear(cpf);
 
 
-    
+    if (nome == "" || nome.length > 100) {
+        alert("Nome invalido!");
+        return false;
+    }
+    if (email == "" || email.length > 100) {
+        alert("Email invalido!");
+        return false;
+    }
+    if (cpf == "" || cpf.length > 11 || cpf.length < 11) {
+        alert("CPF invalido!");
+        return false;
+    }
+    if(cargo == ""){
+        alert("Cargo invalido!")
+        return false;
+    }
 }
