@@ -79,7 +79,17 @@ function validarPalestras() {
 }
 
 function validarEvento() {
-    var nomeEvento = document.forms["formEvento"]["nomeEvento"].value;
+    var nomeEvento = document.forms["formEvento"]["tema"].value;
+    var anoEvento = document.forms["formEvento"]["anoEvento"].value;
+
+    if(nomeEvento == "") {
+        alert("Tema Invalido!")
+        return false;
+    }
+    if(anoEvento == ""){
+        alert("Ano Invalido!")
+        return false;
+    }
 
 
     
