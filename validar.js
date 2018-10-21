@@ -1,4 +1,4 @@
-function validarCPF(cpf){
+function validarClear(cpf){
     var check = cpf.replace(/(\.|\/|\-)/g,"");
     return check;
 
@@ -14,7 +14,10 @@ function validarPalestrante() {
     var dia_nasc = document.forms["formPalestrante"]["dia_nasc"].value;
     var mes_nasc = document.forms["formPalestrante"]["mes_nasc"].value;
     var ano_nasc = document.forms["formPalestrante"]["ano_nasc"].value;
-    var cpf = validarCPF(cpf);
+    var fone = document.forms["formPalestrante"]["fone"].value;
+    var cpf = validarClear(cpf);
+    var fone = validarClear(fone);
+    
 
 
     if (nome == "" || nome.length > 100) {
@@ -27,6 +30,10 @@ function validarPalestrante() {
     }
     if (cpf == "" || cpf.length > 11 || cpf.length < 11) {
         alert("CPF invalido!");
+        return false;
+    }
+    if (fone == "" || fone.length > 11 || fone.length < 10){
+        alert("Telefone invalido!");
         return false;
     }
     if (formacao == "" || formacao.length > 200) {
