@@ -12,8 +12,7 @@
             $("#footer").load("footer.html");
         });
     </script>
-    <script type="text/script" src="validar.js"></script>
-    <title>Meu Form</title>
+    <title>Cadastro Palestrante</title>
     <link rel="stylesheet" type="text/css" href="theme.css">
     <meta charset="utf-8">
 
@@ -26,7 +25,7 @@
 
     <div class="cadastro">
         <form name="formPalestrante" method="post" action="#" onsubmit="return validarPalestrante()">
-            <h2>Cadastro</h2>
+            <h2>Cadastro do Palestrante</h2><br>
 
             <label for="nome">Nome:</label>
             <input type="text" name="nome" id="campo" placeholder="nome"><br><br>
@@ -38,7 +37,12 @@
             <input type="text" name="cpf" id="cpf" placeholder="CPF"><br><br>
 
             <label for="fone">Telefone:</label>
+            <input type="text" name = "DDD" id="DDD" placeholder="DDD" >
             <input type="text" name="fone" id="fone" placeholder="Telefone"><br><br>
+
+            <label for="fone2">Telefone(opcional):</label>
+            <input type="text" name = "DDD2" id="DDD" placeholder="DDD" >
+            <input type="text" name="fone2" id="fone" placeholder="Telefone"><br><br>
 
             <label for="formacao">Formação:</label>
             <input type="text" name="formacao" id="campo" placeholder="Formação"><br><br>

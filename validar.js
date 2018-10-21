@@ -15,8 +15,12 @@ function validarPalestrante() {
     var mes_nasc = document.forms["formPalestrante"]["mes_nasc"].value;
     var ano_nasc = document.forms["formPalestrante"]["ano_nasc"].value;
     var fone = document.forms["formPalestrante"]["fone"].value;
+    var fone2 = document.forms["formPalestrante"]["fone2"].value;
+    var ddd = document.forms["formPalestrante"]["DDD"].value;
+    var ddd2 = document.forms["formPalestrante"]["DDD2"].value;
     var cpf = validarClear(cpf);
     var fone = validarClear(fone);
+    var fone2 = validarClear(fone2);
     
 
 
@@ -34,6 +38,14 @@ function validarPalestrante() {
     }
     if (fone == "" || fone.length > 11 || fone.length < 10){
         alert("Telefone invalido!");
+        return false;
+    }
+    if (ddd == '' || ddd.length > 2 | ddd.length < 2){
+        alert("DDD invalido!")
+        return false;
+    }
+    if (ddd2 == '' || ddd2.length > 2 | ddd2.length < 2){
+        alert("DDD invalido!")
         return false;
     }
     if (formacao == "" || formacao.length > 200) {
@@ -57,5 +69,18 @@ function validarPalestrante() {
         alert("Data invalida!");
         return false;
     }
+    
+}
+
+function validarPalestras() {
+
+
+
+}
+
+function validarEvento() {
+    var nomeEvento = document.forms["formEvento"]["nomeEvento"].value;
+
+
     
 }
