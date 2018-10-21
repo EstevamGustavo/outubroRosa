@@ -39,12 +39,10 @@ function validarPalestrante() {
     }
     if (mes_nasc == 2 && dia_nasc > 29) {
         alert("Data invalida!");
-    }
-    if (mes_nasc == "" || (mes_nasc == 4 || mes_nasc == 6 || mes_nasc == 9 || mes_nasc == 11) && dia_nasc > 30) {
+    }else if (mes_nasc == "" || (mes_nasc == 4 || mes_nasc == 6 || mes_nasc == 9 || mes_nasc == 11) && dia_nasc > 30) {
         alert("Data nvalida!");
         return false;
-    }
-    if (dia_nasc == "" || dia_nasc > 31) {
+    }else if (dia_nasc == "" || dia_nasc > 31) {
         alert("Data invalida!");
         return false;
     }
