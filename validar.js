@@ -36,7 +36,7 @@ function validarPalestrante() {
         alert("CPF invalido!");
         return false;
     }
-    if (fone == "" || fone.length > 11 || fone.length < 10){
+    if (fone == "" || fone.length > 9 || fone.length < 8){
         alert("Telefone invalido!");
         return false;
     }
