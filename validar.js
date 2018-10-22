@@ -96,6 +96,8 @@ function validarEquipe() {
     var email = document.forms["formEquipe"]["email"].value;
     var cpf = document.forms["formEquipe"]["cpf"].value;
     var cargo = document.forms["formEquipe"]["cboEquipe"].value;
+    var fone = document.forms["formEquipe"]["fone"].value;
+    var ddd = document.forms["formEquipe"]["DDD"].value;
     var cpf = validarClear(cpf);
 
 
@@ -109,6 +111,14 @@ function validarEquipe() {
     }
     if (cpf == "" || cpf.length > 11 || cpf.length < 11) {
         alert("CPF invalido!");
+        return false;
+    }
+    if (ddd == '' || ddd.length > 2 | ddd.length < 2) {
+        alert("DDD invalido!")
+        return false;
+    }
+    if (fone == "" || fone.length > 9 || fone.length < 8) {
+        alert("Telefone invalido!");
         return false;
     }
     if(cargo == ""){
